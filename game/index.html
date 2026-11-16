@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Ember Warden — guard the last light</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #050510;
+    min-height: 100%;
+    font-family: system-ui, sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  #wrap {
+    width: min(960px, 100vw);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #07071a;
+    cursor: crosshair;
+  }
+  #hint {
+    color: #6f66a0;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0 16px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <div id="hint">WASD move &nbsp;·&nbsp; Mouse aim &nbsp;·&nbsp; Hold click to shoot &nbsp;·&nbsp; Shift dash &nbsp;·&nbsp; P pause &nbsp;·&nbsp; M mute</div>
+</div>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
